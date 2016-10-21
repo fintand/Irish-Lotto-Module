@@ -2,6 +2,8 @@
 
 Nodejs module wrapper for the Irish/EuroMillions Lotto.
 
+[![CircleCI](https://circleci.com/gh/fintand/Irish-Lotto-Module.svg?style=svg)](https://circleci.com/gh/fintand/Irish-Lotto-Module)
+
 ```js
 var lotto = require('irish-lotto')
 
