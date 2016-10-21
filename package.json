@@ -1,0 +1,52 @@
+{
+  "name": "irish-lotto",
+  "version": "1.0.0",
+  "description": "Get Irish lotto numbers in JSON",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon -w src --exec \"babel-node src --presets es2015,stage-2\"",
+    "test": "mocha test/index.test.js -w --compilers js:babel-register",
+    "prebuild": "rimraf dist",
+    "build": "babel --copy-files --out-dir dist src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fintand/Irish-Lotto-Module.git"
+  },
+  "keywords": [
+    "irish",
+    "lotto",
+    "json"
+  ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "author": "Fintan Dunleavy <fintan.dunleavy@gmail.com> (https://fintandunleavy.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "6.16.0",
+    "babel-preset-es2015": "6.16.0",
+    "babel-preset-stage-2": "6.17.0",
+    "babel-register": "6.16.3",
+    "chai": "3.5.0",
+    "mocha": "3.1.2",
+    "nodemon": "1.11.0",
+    "rimraf": "2.5.4"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "lodash": "4.16.4",
+    "superagent": "2.3.0",
+    "xml2js": "0.4.17"
+  },
+  "bugs": {
+    "url": "https://github.com/fintand/Irish-Lotto-Module/issues"
+  },
+  "homepage": "https://github.com/fintand/Irish-Lotto-Module#readme",
+}
